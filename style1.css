@@ -1,0 +1,204 @@
+:root {
+    --background-primary: #B9AED6;
+    --background-secondary: #FEC93D;
+    --skin-1: #f5c2a0;
+    --skin-2: #f6c09c;
+    --body-primary: #ffffff;
+    --color-details-1: #7853a2;
+    --color-details-2: #002538;
+    --color-details-3: #da1b4f;
+    --color-details-4: #e64326;
+    --color-details-5: #e9696a;
+    --color-details-6: #e9686a;
+    --color-details-7: #ed425e;
+    --color-details-8: #f16b6c;
+    --color-details-9: #ec1358;
+    --shade: #000000;
+    --shade-1: #ebe8f3;
+    --shade--2: #ea7b8b;
+    --shade--3: #ed917e;
+    --shade--4: #cdc4df;
+    --shade--5: #ed927d;
+    --shade--6: #0a3442;
+    --shade--7: #00243a;
+}
+
+.second-drawing {
+    overflow: hidden;
+}
+
+.second-drawing .head {
+    width: 93px;
+    height: 207px;
+    position: relative;
+    inset-block-start: 80px;
+    margin: 0 auto;
+    background-color: var(--skin-2);
+    border-radius: 50px;
+    box-shadow: 0px -133px 0px 2px rgb(237, 145, 125) inset;
+    -webkit-box-shadow: 0px -133px 0px 2px rgba(237, 146, 125, 1) inset;
+    -moz-box-shadow: 0px -133px 0px 2px rgba(237, 146, 125, 1) inset;
+}
+
+.second-drawing .head .beard {
+    width: 93px;
+    height: 87px;
+    position: absolute;
+    inset-block-start: 84px;
+    background-color: var(--shade);
+    border-radius: 0 0 50px 50px;
+    color: var(--color-details-6);
+    box-shadow: 0 15px;
+
+}
+
+.second-drawing .head .moustache {
+    width: 93px;
+    height: 85px;
+    background-color: var(--shade--6);
+    position: absolute;
+    inset-block-start: 43px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.second-drawing .head .moustache::before {
+    width: 45px;
+    height: 23px;
+    content: "";
+    background-color: var(--body-primary);
+    position: absolute;
+    inset-block-start: 22px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 19px 19px 100% 100%;
+    z-index: 1;
+}
+
+.second-drawing .head .nose {
+    width: 32px;
+    height: 22px;
+    background-color: var(--color-details-7);
+    position: absolute;
+    inset-block-start: 34px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0 0 5px 5px;
+    z-index: 3;
+    box-shadow: 0 6px;
+}
+
+.second-drawing .head .nose::before {
+    content: "";
+    width: 7px;
+    height: 11px;
+    background-color: var(--shade--5);
+    position: absolute;
+    inset-block-start: -8px;
+    inset-inline-start: 60%;
+    border-radius: 20px;
+    z-index: 3;
+
+
+}
+
+.second-drawing .head .nose div {
+    width: 32px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--color-details-8);
+    position: absolute;
+    inset-block-start: -15px;
+}
+
+.second-drawing .head .nose-style {
+    width: 44px;
+    height: 15px;
+    background-color: var(--color-details-9);
+    position: absolute;
+    inset-block-start: 39px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 0 5px;
+}
+
+.second-drawing .head .eyes {
+    width: 64px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    inset-block-start: 15px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+}
+
+.second-drawing .head .eyes div .eyebrows {
+    width: 16px;
+    height: 10px;
+    background-color: var(--shade--7);
+    border-radius: 20px;
+    color: var(--shade--5);
+    box-shadow: 0 5px;
+}
+
+.second-drawing .head .eyes div .eye {
+    width: 9px;
+    height: 9px;
+    background-color: var(--shade);
+    border-radius: 50px;
+    position: relative;
+    inset-block-start: 2px;
+    inset-inline-start: 3px;
+}
+
+.second-drawing .ears {
+    width: 144px;
+    height: 40px;
+    position: absolute;
+    inset-block-start: 107px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-drawing .ears .ear1 {
+    width: 40px;
+    height: 40px;
+    background-color: var(--shade--5);
+    border-radius: 50%;
+    box-shadow: -16px 0px 0 2px inset  var(--color-details-6);
+}
+
+.second-drawing .ears .ear1::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    inset-block-start: 11px;
+    inset-inline-start: 15px;
+    background-color: var(--color-details-9);
+    border-radius: 50%;
+}
+
+.second-drawing .ears .ear2 {
+    width: 40px;
+    height: 40px;
+    background-color: var(--shade--5);
+    border-radius: 50%;
+    box-shadow: 16px 0px 0 2px inset  var(--color-details-6);
+}
+
+.second-drawing .ears .ear2::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    inset-block-start: 11px;
+    inset-inline-start:113px;
+    background-color: var(--color-details-9);
+    border-radius: 50%;
+}

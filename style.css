@@ -1,0 +1,572 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-primary: #B9AED6;
+    --background-secondary: #FEC93D;
+    --skin-primary: #f5c2a0;
+    --body-primary: #ffffff;
+    --color-details-1: #7853a2;
+    --color-details-2: #002538;
+    --color-details-3: #da1b4f;
+    --color-details-4: #e64326;
+    --color-details-5: #e9696a;
+    --shade-1: #ebe8f3;
+    --shade--2: #ea7b8b;
+    --shade--3: #ed917e;
+    --shade--4: #cdc4df;
+}
+
+.first-drawing {
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--background-primary);
+    display: block;
+    top: 0px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.second-drawing {
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--background-secondary);
+    display: block;
+    position: relative;
+}
+
+.first-drawing .head {
+    background-color: var(--skin-primary);
+    width: 63px;
+    height: 190px;
+    position: relative;
+    inset-block-start: 63px;
+    border-radius: 50px;
+    z-index: 2;
+}
+
+.first-drawing .body-content {
+    width: 375px;
+    position: relative;
+    inset-block-start: -190px;
+}
+
+.first-drawing .body-content .torso {
+    height: 67px;
+    width: 84px;
+    background-color: var(--body-primary);
+    position: absolute;
+    inset-block-start: 225px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+}
+
+.first-drawing .body-content .shoulder-left {
+    height: 52px;
+    width: 46px;
+    background-color: var(--body-primary);
+    position: absolute;
+    inset-block-start: 240px;
+    inset-inline-start: 27%;
+    z-index: 3;
+    border-top-left-radius: 50px;
+    color: var(--shade-1);
+    box-shadow: -22px 4px 0 -4px;
+}
+
+.first-drawing .body-content .shoulder-right {
+    height: 52px;
+    width: 46px;
+    background-color: var(--body-primary);
+    position: absolute;
+    inset-block-start: 240px;
+    inset-inline-start: 61%;
+    z-index: 1;
+    border-top-right-radius: 50px;
+    color: var(--shade-1);
+    box-shadow: 23px 4px 0 -4px;
+}
+
+.first-drawing .body-content .torso ul {
+    display: flex;
+    height: 95%;
+    width: 100%;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.first-drawing .body-content .torso ul li {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-details-1);
+    border-radius: 50%;
+    color: var(--shade-1);
+    box-shadow: 0px 3px;
+}
+
+.first-drawing .body-content .torso .pocket {
+    height: 7px;
+    width: 45px;
+    background-color: var(--shade-1);
+    position: absolute;
+    inset-block-start: 47px;
+    inset-inline-start: 60px;
+    z-index: 6;
+}
+
+.first-drawing .head .beard {
+    width: 84px;
+    height: 109px;
+    background-color: var(--body-primary);
+    position: relative;
+    inset-block-start: 41px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0px 0px 200px 200px;
+    -moz-border-radius: 0px 0px 200px 200px;
+    -webkit-border-radius: 0px 0px 200px 200px;
+    box-shadow: 0px -24px 0px 0px rgba(235, 232, 243, 0.49) inset;
+    -webkit-box-shadow: 0px -24px 0px 0px rgba(235, 232, 243, 0.49) inset;
+    -moz-box-shadow: 0px -24px 0px 0px rgba(235, 232, 243, 0.49) inset;
+    z-index: 1;
+}
+
+.first-drawing .head .beard-style {
+    width: 62px;
+    height: 109px;
+    background-color: var(--shade--3);
+    position: absolute;
+    inset-block-start: 49px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0px 0px 200px 200px;
+    z-index: -1;
+}
+
+.first-drawing .head .beard .mouth {
+    position: relative;
+    inset-block-start: 34px;
+    background-color: var(--color-details-2);
+    width: 36px;
+    height: 33px;
+    margin: 0 auto;
+    border-radius: 0px 0px 200px 200px;
+    -moz-border-radius: 0px 0px 200px 200px;
+    -webkit-border-radius: 0px 0px 200px 200px;
+    overflow: hidden;
+}
+
+
+.first-drawing .head .beard .mouth .teeth {
+    width: 26px;
+    height: 8px;
+    background-color: var(--body-primary);
+    margin: 0 auto;
+    border-radius: 0px 0px 6px 5px;
+    -moz-border-radius: 0px 0px 6px 5px;
+    -webkit-border-radius: 0px 0px 6px 5px;
+}
+
+.first-drawing .head .beard .mouth .teeth::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 10px;
+    height: 2px;
+    background-color: var(--shade-1);
+    border-radius: 20px;
+}
+
+.first-drawing .head .beard .mouth .language {
+    background-color: var(--color-details-3);
+    width: 18px;
+    height: 23px;
+    border-top-right-radius: 50%;
+    position: relative;
+    inset-block-start: 3px;
+    inset-inline-start: -3px;
+
+}
+
+.first-drawing .head .beard .shade1 {
+    width: 10px;
+    height: 10px;
+    background-color: var(--shade-1);
+    position: relative;
+    inset-block-start: 20px;
+    inset-inline-start: 8px;
+    border-radius: 50%;
+}
+
+.first-drawing .head .beard .shade2 {
+    width: 5px;
+    height: 12px;
+    background-color: var(--shade-1);
+    position: relative;
+    inset-block-start: -1px;
+    inset-inline-start: 65px;
+    border-radius: 20px;
+}
+
+.first-drawing .head .face .moustache {
+    width: 154px;
+    height: 34px;
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 41px;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+.first-drawing .head .face .moustache .style-moustache {
+    display: block;
+    width: 55px;
+    height: 43px;
+    background-color: var(--shade-1);
+    border-radius: 0 0 50% 50%;
+    position: relative;
+    inset-block-start: -22px;
+    color: var(--shade-1);
+    box-shadow: 30px 13px, 70px 13px, 99px 0px;
+    z-index: 2;
+}
+.first-drawing .head .face .moustache .style-moustache2  {
+    width: 26.4px;
+    height: 20px;
+    position: absolute;
+    inset-block-start: 20px;
+    inset-inline-start: 63.7px;
+    background-color: var(--shade--4);
+
+}
+.first-drawing .head .face .moustache .style-moustache::before {
+    content: "";
+    position: absolute;
+    inset-block-start: -8px;
+    width: 55px;
+    height: 43px;
+    background-color: var(--body-primary);
+    border-radius: 0 0 50% 50%;
+    color: var(--body-primary);
+    box-shadow: 30px 13px, 70px 13px, 99px 0px;
+}
+
+.first-drawing .head .face .nose {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    inset-block-start: -3px;
+    border-radius: 50%;
+    background-color: var(--color-details-3);
+    z-index: 3;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    color: var(--shade--4);
+    box-shadow: 0px 7px, -19px -7px 0px 11px, 19px -7px 0px 11px;
+}
+
+.first-drawing .head .face .nose::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 10px;
+    inset-inline-start: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--shade--2);
+}
+
+.first-drawing .head .face .glasses {
+    position: absolute;
+    inset-block-start: 15px;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: var(--color-details-2);
+    inset-inline-start: 50%;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.first-drawing .head .face .glasses .style-lent {
+    position: absolute;
+    inset-block-start: 4px;
+    inset-inline-start: -4px;
+    width: 37px;
+    height: 21px;
+    background-color: var(--color-details-1);
+    border-radius: 100px 100px 0px 0px;
+    rotate: -45deg;
+}
+
+
+.first-drawing .head .face .glasses .style-lent::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 3px;
+    inset-inline-start: 2px;
+    width: 33px;
+    height: 20px;
+    background-color: var(--color-details-2);
+    border-radius: 100px 100px 0 0;
+}
+
+
+.first-drawing .head .face .glasses2 {
+    position: absolute;
+    inset-block-start: 15px;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: var(--color-details-2);
+    inset-inline-start: -16%;
+    z-index: 3;
+}
+
+.first-drawing .head .face .glasses2::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 14px;
+    inset-inline-start: 40px;
+    width: 3px;
+    height: 12px;
+    background-color: var(--color-details-2);
+}
+
+.first-drawing .head .face .glasses2 .style-lent {
+    position: absolute;
+    inset-block-start: 4px;
+    inset-inline-start: -4px;
+    width: 37px;
+    height: 21px;
+    background-color: var(--color-details-1);
+    border-radius: 100px 100px 0px 0px;
+    rotate: -45deg;
+}
+
+
+.first-drawing .head .face .glasses2 .style-lent::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 3px;
+    inset-inline-start: 2px;
+    width: 33px;
+    height: 20px;
+    background-color: var(--color-details-2);
+    border-radius: 100px 100px 0 0;
+}
+
+.first-drawing .head .face .lens1 {
+    margin: 50% auto;
+    transform: translate(0, -50%);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--background-secondary);
+    overflow: hidden;
+}
+
+.first-drawing .head .face .lens1 div:first-child {
+    transform: translate(0, -50%);
+    position: relative;
+    inset-block-start: 10px;
+    inset-inline-start: 4px;
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-details-4);
+    rotate: 45deg;
+}
+
+.first-drawing .head .face .lens1 div:nth-child(2) {
+    transform: translate(0, -50%);
+    position: absolute;
+    inset-block-start: 18px;
+    inset-inline-start: 10px;
+    width: 6px;
+    height: 100%;
+    background-color: var(--color-details-4);
+    rotate: 45deg;
+}
+
+.first-drawing .head .face .ears .ear1 {
+    width: 24px;
+    height: 13px;
+    background-color: var(--skin-primary);
+    position: absolute;
+    inset-block-start: 28px;
+    inset-inline-start: -25px;
+    border-radius: 10px 0 0 0;
+    overflow: hidden;
+}
+
+.first-drawing .head .face .ears .ear1::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 7px;
+    inset-inline-start: 7px;
+    width: 24px;
+    height: 6px;
+    background-color: var(--color-details-5);
+    border-radius: 10px 0 0 10px;
+    color: var(--shade--2);
+    box-shadow: -27px 2px 3px;
+}
+
+.first-drawing .head .face .ears .ear1 div {
+    width: 5px;
+    height: 3px;
+    position: relative;
+    inset-block-start: 2px;
+    inset-inline-start: 8px;
+    background-color: var(--shade-1);
+    border-radius: 20px;
+}
+
+.first-drawing .head .face .ears .ear2 {
+    width: 24px;
+    height: 13px;
+    background-color: var(--skin-primary);
+    position: absolute;
+    inset-block-start: 28px;
+    inset-inline-start: 64px;
+    border-radius: 0 10px 0 0;
+    overflow: hidden;
+}
+
+.first-drawing .head .face .ears .ear2::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 7px;
+    inset-inline-start: -7px;
+    width: 24px;
+    height: 6px;
+    background-color: var(--color-details-5);
+    border-radius: 0 10px 10px 0;
+    color: var(--shade--2);
+    box-shadow: 27px 2px 3px;
+}
+
+.first-drawing .head .face .ears .ear2 div {
+    width: 5px;
+    height: 3px;
+    position: relative;
+    inset-block-start: 2px;
+    inset-inline-start: 10px;
+    background-color: var(--shade-1);
+    border-radius: 20px;
+}
+
+.first-drawing .head .face .eyebrows {
+    height: 20px;
+    width: 70px;
+    position: absolute;
+    inset-block-start: 1px;
+    inset-inline-start: -4px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.first-drawing .head .face .eyebrows .eyebrows1,
+.first-drawing .head .face .eyebrows .eyebrows2 {
+    height: 11px;
+    width: 28px;
+    background-color: var(--body-primary);
+    border-radius: 20px;
+    color: var(--shade--4);
+    box-shadow: inset 0px -4px;
+}
+
+.first-drawing .head .face .eyebrows .eyebrows1::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 9px;
+    inset-inline-start: 7px;
+    height: 11px;
+    width: 20px;
+    background-color: var(--shade--3);
+    border-radius: 30px 20px 20px 10px;
+    z-index: -1;
+}
+
+.first-drawing .head .face .eyebrows .eyebrows2::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 9px;
+    inset-inline-start: 43px;
+    height: 11px;
+    width: 20px;
+    background-color: var(--shade--3);
+    border-radius: 20px 30px 10px 20px;
+    z-index: -1;
+}
+
+.first-drawing .hair {
+    width: 150px;
+    height: 124px;
+    margin: 0 auto;
+    position: absolute;
+    inset-block-start: 30px;
+
+}
+
+.first-drawing .hair .hair-style1 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 17px;
+    background-color: var(--shade-1);
+    border-radius: 50%;
+    color: var(--shade-1);
+    box-shadow: -9px -18px, -15px -46px, -12px -66px, -1px -84px var(--body-primary), 15px -98px var(--body-primary), 36px -104px var(--body-primary), 58px -104px var(--body-primary), 79px -98px var(--body-primary), 95px -84px var(--body-primary), 106px -66px, 109px -46px, 105px -18px, 96px 0px, 90px -11px, 6px -11px;
+}
+
+.first-drawing .hair .hair-style1::before {
+    content: "";
+    position: absolute;
+    inset-block-start: -99px;
+    inset-inline-start: -2.5px;
+    width: 119px;
+    height: 105px;
+    background-color: var(--shade-1);
+    border-radius: 50%;
+}
+
+.first-drawing .hair .hair-style1::after {
+    content: "";
+    position: absolute;
+    inset-block-start: -84px;
+    inset-inline-start: -1px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--body-primary);
+    border-radius: 50% 50% 10px 10px;
+    color: var(--body-primary);
+    box-shadow: 0px 25px, 96px 25px, 96px 0px,55px 18px , 16px -14px , 37px -20px, 59px -20px, 80px -14px, 22px 10px 0 15px, 36px 2px 0 15px, 50px 0px 0 15px, 62px 2.5px 0 15px, 73px 9px 0 15px;
+}
+.first-drawing .hair .hair-style2{
+    width: 16px;
+    height: 16px;
+    background-color:var(--shade-1);
+    position: absolute;
+    inset-block-start: 7px;
+    inset-inline-start: 57px;
+    border-radius: 50%;
+    color: var(--shade-1);
+    box-shadow: -30px 30px 0 -4px,-37px 17px 0 -4px, 13px 7px 0 -6px, 44px 12px 0 -2px,30px 8px 0 -4px, 52px 24px 0 -5px;
+}
