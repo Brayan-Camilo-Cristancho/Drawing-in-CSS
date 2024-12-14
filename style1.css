@@ -1,6 +1,7 @@
 :root {
-    --background-primary: #B9AED6;
-    --background-secondary: #FEC93D;
+    --background-1: #B9AED6;
+    --background-2: #FEC93D;
+    --background-3: #fed667;
     --skin-1: #f5c2a0;
     --skin-2: #f6c09c;
     --body-primary: #ffffff;
@@ -13,6 +14,8 @@
     --color-details-7: #ed425e;
     --color-details-8: #f16b6c;
     --color-details-9: #ec1358;
+    --color-details-10: #723024;
+    --color-details-11: #a14e3c;
     --shade: #000000;
     --shade-1: #ebe8f3;
     --shade--2: #ea7b8b;
@@ -38,6 +41,7 @@
     box-shadow: 0px -133px 0px 2px rgb(237, 145, 125) inset;
     -webkit-box-shadow: 0px -133px 0px 2px rgba(237, 146, 125, 1) inset;
     -moz-box-shadow: 0px -133px 0px 2px rgba(237, 146, 125, 1) inset;
+    z-index: 1
 }
 
 .second-drawing .head .beard {
@@ -170,7 +174,7 @@
     height: 40px;
     background-color: var(--shade--5);
     border-radius: 50%;
-    box-shadow: -16px 0px 0 2px inset  var(--color-details-6);
+    box-shadow: -16px 0px 0 2px inset var(--color-details-6);
 }
 
 .second-drawing .ears .ear1::before {
@@ -189,7 +193,7 @@
     height: 40px;
     background-color: var(--shade--5);
     border-radius: 50%;
-    box-shadow: 16px 0px 0 2px inset  var(--color-details-6);
+    box-shadow: 16px 0px 0 2px inset var(--color-details-6);
 }
 
 .second-drawing .ears .ear2::before {
@@ -198,7 +202,167 @@
     height: 16px;
     position: absolute;
     inset-block-start: 11px;
-    inset-inline-start:113px;
+    inset-inline-start: 113px;
     background-color: var(--color-details-9);
     border-radius: 50%;
+}
+
+.second-drawing .hair {
+    width: 36px;
+    height: 37px;
+    background-color: var(--shade--7);
+    position: absolute;
+    inset-block-start: 56px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    box-shadow: inset 0px -14px var(--shade), 0px 3px var(--shade--5), 12px 8px 0 -9px var(--shade--5), -12px 8px 0 -9px var(--shade--5);
+    z-index: 2;
+}
+
+.second-drawing .hair-style {
+    width: 93px;
+    height: auto;
+    position: absolute;
+    inset-block-start: 67px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-drawing .hair-1 {
+    z-index: 0;
+    position: static;
+    rotate: -53deg;
+    box-shadow: inset 0px -18px;
+}
+
+.second-drawing .hair-2 {
+    z-index: 0;
+    position: relative;
+    inset-block-start: 27px;
+    inset-inline-start: 22px;
+    box-shadow: inset 0px -18px;
+    rotate: 50deg;
+}
+
+.second-drawing .hair::before {
+    content: "";
+    width: 17px;
+    height: 18px;
+    background-color: var(--shade--7);
+    position: absolute;
+    inset-block-start: 12px;
+    inset-inline-start: -8px;
+    border-radius: 50%;
+    box-shadow: inset 6px -9px var(--shade);
+}
+
+.second-drawing .hair::after {
+    content: "";
+    width: 17px;
+    height: 18px;
+    background-color: var(--shade--7);
+    position: absolute;
+    inset-block-start: 12px;
+    inset-inline-start: 27px;
+    border-radius: 50%;
+    box-shadow: inset -6px -9px var(--shade);
+}
+
+.second-drawing .hair-1::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 15px;
+    inset-inline-start: -5px;
+    width: 17px;
+    height: 18px;
+    background-color: var(--shade);
+    box-shadow: none;
+}
+
+.second-drawing .hair-1::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 16px;
+    inset-inline-start: 26px;
+    width: 17px;
+    height: 18px;
+    background-color: var(--shade);
+    box-shadow: none;
+}
+
+.second-drawing .hair-2::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 15px;
+    inset-inline-start: -7px;
+    width: 17px;
+    height: 18px;
+    background-color: var(--shade);
+    box-shadow: none;
+}
+
+.second-drawing .hair-2::after {
+    content: "";
+    position: absolute;
+    inset-block-start: 16px;
+    inset-inline-start: 26px;
+    width: 17px;
+    height: 18px;
+    background-color: var(--shade);
+    box-shadow: none;
+}
+
+.second-drawing .body {
+    width: 213px;
+    height: 106px;
+    background-color: var(--color-details-10);
+    position: absolute;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    -moz-border-radius: 100px 100px 0 0;
+    -webkit-border-radius: 100px 100px 0 0;
+    border-radius: 100px 100px 0 0;
+    overflow: hidden;
+    box-shadow: -40px 15px 0 -15px var(--shade--5), 41px 15px 0 -15px var(--shade--5);
+}
+
+.second-drawing .body::before {
+    content: "";
+    position: absolute;
+    inset-block-start: -25px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    width: 129px;
+    height: 123px;
+    background-color: var(--skin-2);
+    border-radius: 50%;
+}
+
+.second-drawing .background-style {
+    width: 284px;
+    height: 267px;
+    position: absolute;
+    background-color: var(--background-3);
+    border-radius: 50%;
+    inset-block-start: 40px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+}
+
+.second-drawing .background-style::before {
+    content: "";
+    position: absolute;
+    inset-block-start: -20px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    background-color: #a14e3c;
+    box-shadow: 0px -46px 0px 6px var(--color-details-10) inset;
+    -webkit-box-shadow: 0px -46px 0px 6px var(--color-details-10) inset;
+    -moz-box-shadow: 0px -46px 0px 6px var(--color-details-10) inset;
 }
